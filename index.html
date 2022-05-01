@@ -5,9 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./stylesheet.css">
     <title>Document</title>
 </head>
 <body>
-    
+<div id="StartgameWindow">
+  <p id="welcome">Welcome to RPS</p>
+  <button id="welcome2">StartGame</button>
+</div>
+
+  <div id="EndgameWindow">
+    <p id="End">Endgame</p>
+    <button id="restart">Replay</button>
+    <div class="scores">
+    <div id="playerScore"></div>
+    <div id="computerScore"></div>
+    </div>
+  </div>
+  
+ <div class="wrapper">
+ <div class="header">
+   <p class="headertext">Rock Paper Scissors</p>
+ </div>
+ <div class="content">
+   <div class="playerPick">
+      <div class="playerImage"></div>
+      <p class="playerText"></p>
+   </div>
+   <div class="vs"><p>VS</p></div>
+   <div class="computerPick">
+      <div class="computerImage"></div>
+      <p class="computerText"></p>
+    </div>
+  </div>  
+   <p class="winloseText"></p>
+ <div class="buttons">
+   <button class="buttonR">ROCK</button>
+   <button class="buttonP">PAPER</button>
+   <button class="buttonS">SCISSORS</button>
+</div>
+ <div class="footer">
+   <p class="scorePlayer"></p>
+   <p class="scoreComputer"></p>
+ </div>
+ </div>
+
+ </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,64 @@
+/* 
+    block sises / layout: use VW/VH to specify full size of main parent
+    block sizes / layout: use percentages, based on main parent.
+   individual block sizes (padding/margin): use rem, based on html font size
+   pixels for border widths etc.
+*/
+
+html {
+    font-size: 20px; /* rem takes relative to this font size */
+}
+
+.wrapper {
+    width: 100%;
+    height: 100VH;
+    width: 100VW;
+}
+
+.containerHeader {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1 {
+    background-color: red;
+    padding: 2rem;
+    width: 20%;
+    flex-shrink: 1;
+}
+
+.containerBody {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+
+.block2 {
+    background-color: grey;
+    height: 40%;
+    flex-shrink: 1;
+}
+
+.block4 {
+    height: 20%;
+    background-color: orange;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.containerFooter {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block3 {
+    background-color: green;
+    height: 20%;
+    width: 10%;
+    flex-shrink: 1;
+}

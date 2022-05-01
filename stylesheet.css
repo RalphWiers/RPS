@@ -1,0 +1,201 @@
+/* 
+    block sises / layout: use VW/VH to specify full size of main parent
+    block sizes / layout: use percentages, based on main parent.
+   individual block sizes (padding/margin): use rem, based on html font size
+   pixels for border widths etc.
+*/
+
+html {
+    font-size: 20px; /* rem takes relative to this font size */
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+#StartgameWindow {
+    position: absolute;
+    height: 100VH;
+    width: 100VW;
+    background-color: black;
+}
+
+#welcome {
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+}
+
+#welcome2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+#EndgameWindow {
+    position: absolute;
+    height: 100VH;
+    width: 100VW;
+    background-color: black;
+    display: none;
+}
+
+#End{
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+}
+
+
+#restart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.scores {
+ margin-top: 130px;
+}
+
+#playerScore, #computerScore {
+    color: white;
+    text-align: center;
+}
+
+
+#welcome2:hover {
+    background-color: aqua;
+}
+
+#restart:hover {
+    background-color: rgb(0, 255, 64);
+}
+    
+.buttons .buttonR:hover, .buttonP:hover, .buttonS:hover {
+    background-color: rgb(60, 132, 226);
+
+}
+
+.wrapper {
+    height: 100VH;
+    width: 100VW;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 20%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.headertext {
+    align-self: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.content {
+    height: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.playerPick, .computerPick {
+    padding: 2rem;
+    width: 20%;
+    height: 80%;
+    align-self: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.vs {
+    padding: 1rem;
+    width: 20%;
+    height: 40%;
+    align-self: center;
+    margin: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.playerText, .computerText  {
+    margin-bottom: 5px;
+    align-self: center;
+    flex: 0 1 auto;
+}
+
+.playerImage, .computerImage {
+    align-self: center;
+    padding: 80px;
+
+}
+
+.winloseText {
+    text-align: center;
+    background-color:black;
+    margin-top: -30px;
+    color: white;
+    padding: 0.2rem;
+}
+
+.buttons {
+    background-color: rgb(84, 125, 238);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.buttonR, .buttonP , .buttonS {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 2rem;
+    height: 50%;
+    align-self: center;
+    flex: 1 1 0px;
+    margin: 40px;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: black;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.scorePlayer {
+    font-size: 1rem;
+}
+
+.scoreComputer {
+    font-size: 1rem;
+}
